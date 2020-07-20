@@ -1,0 +1,25 @@
+1. What is MicroTask?
+   A. The microtask queue is processed after callbacks as long as no other JavaScript is mid-execution, and at the end of each task. Any additional microtasks queued during microtasks are added to the end of the queue and also processed. Microtasks include mutation observer callbacks, and as in the above example, promise callbacks.
+
+
+2. Explain with examples how private, protected variables can be implemented in classes and how can they be used in subclasses?
+   A. Private vars are perfect when you need local (private) state information for a component that does NOT change or relate to rendering directly.
+
+    Approaches to Make Private/protected variable
+    -----------------------------------
+    1. Define var in lifecycle method:-
+        componentDidMount() {
+            this.name = 'I AM A Private Variable';
+        },
+    2. ES7 Way:-
+        class Hello extends React.Component {
+            name = 'I AM A Private Variable';
+            render() {
+                return (
+                <div>
+                    {this.name}
+                </div>
+                );
+            }
+        }
+        export default Hello;

@@ -1,0 +1,8 @@
+.result{
+    &_list{display: flex;flex-direction: row;flex-wrap: wrap;padding:0;justify-content:center;
+        &--each{list-style: none;background:#2f26ff;padding: 20px; margin: 15px 8px; width: 20%;
+            h3{color: #fff;text-transform: uppercase;padding-bottom:10px;margin:0;}
+            p,div{color:#fff;padding:2px 0;margin:5px 0;}
+        }
+    }
+}

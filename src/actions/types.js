@@ -1,0 +1,1 @@
+export const SET_FORM_RESULT = 'SET_FORM_RESULT';
